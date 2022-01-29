@@ -1,0 +1,5 @@
+background animat
+text animat
+negru
+logo loading screen
+design asimetric

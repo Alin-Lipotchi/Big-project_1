@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./img/background.gif) no-repeat center center/cover;
+}
+
+.loading-screen {
+    width: 100vw;
+    height: 100vh;
+    background: #223;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-in-out;
+}
+
+.ls-logo {
+    width: 150px;
+    height: 150px;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.ls-logo:hover {
+    transform: rotate(360deg);
+}
