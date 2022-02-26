@@ -1,17 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "consolas";
 }
 
 body {
-    background: url(./img/background.gif) no-repeat center center/cover;
+    background: url(./img/background.gif) no-repeat fixed center/cover;
 }
+
+/* Loading Screen */
 
 .loading-screen {
     width: 100vw;
     height: 100vh;
-    background: #223;
+    background: #000005;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,6 +30,70 @@ body {
     transition: all 1s ease-in-out;
 }
 
-.ls-logo:hover {
-    transform: rotate(360deg);
+.login-screen {
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    color: #e1e1ff;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    align-items: center;
+}
+
+.login-form input {
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+/* Page */
+
+.container {
+    display: none;
+}
+
+.start-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background: url(./img/background.gif) no-repeat center center/cover;
+}
+
+.start-page .title {
+    color: #e1e1ff;
+    text-align: center;
+    margin-top: 6rem;
+    font-size: 2.5rem;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.start-page .scroll-tip {
+    color: #e1e1ff;
+    cursor: default;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.lobby {
+    color: #e1e1ff;
+    background: #010101;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lobby .quote {
+    text-align: center;
+    font-size: 1rem;
+    margin: 3rem 1rem;
+    border-top: 1px solid #e1e1ff;
 }
