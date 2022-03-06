@@ -8,6 +8,8 @@ const loginForm = document.querySelector(".login-form");
 const title = document.querySelector(".title");
 const scrollTip = document.querySelector(".scroll-tip");
 
+window.scroll(0,0);
+
 const addName = (e) => {
     e.preventDefault();
     console.log(e.target[0].value);
@@ -54,7 +56,7 @@ const animate = () => {
     const stopAnim = () => {
         clearInterval(interval);
         loadingScreen.style.opacity = "0";
-        setTimeout(removeLoadingScreenDisplayPage, 1100);
+        setTimeout(removeLoadingScreenDisplayPage, 1000);
     }
     setTimeout(stopAnim, 6000);
 }
